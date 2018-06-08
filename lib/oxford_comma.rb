@@ -9,6 +9,7 @@ def oxford_comma(array)
     #new_array = array.insert(size -=1, "and ")
     conversion = new_array.join(", ")
     sindex = conversion.rindex(",")
+    conversion[sindex] = ", and"
   end  
   conversion
     
