@@ -6,9 +6,9 @@ def oxford_comma(array)
   elsif size == 2 
     conversion = array.join(" and ")
   else
-    new_array = array.insert(size -=1, "and ")
+    #new_array = array.insert(size -=1, "and ")
     conversion = new_array.join(", ")
-    conversion.rindex(",")
+    sindex = conversion.rindex(",")
   end  
   conversion
     
