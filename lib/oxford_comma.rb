@@ -6,20 +6,9 @@ def oxford_comma(array)
   elsif size == 2 
     conversion = array.join(" and ")
   else
-    #new_array = array.insert(size -=1, "and ")
     conversion = array.join(", ")
     sindex = conversion.rindex(",")
     conversion[sindex] = ", and"
   end  
   conversion
-    
-  #array.each do |word|
-   # counter = 0
-    #while counter < size 
-     # conversion = array.join(",")
-      #counter += 1
-    #end
-    #conversion
- # end 
-
 end
