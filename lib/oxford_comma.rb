@@ -6,7 +6,7 @@ def oxford_comma(array)
     conversion = array.join(" and ")
   else
     conversion = array.join(", ")
-    coversion << "and"
+    conversion << "and"
   end  
   conversion
     
