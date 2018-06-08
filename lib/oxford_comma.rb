@@ -1,11 +1,12 @@
 
 def oxford_comma(array)
   size = array.size
-  
-  if size == 2 
+  if size == 1 
+    conversion = array.join
+  elsif size == 2 
     conversion = array.join(" and ")
   else
-    new_array = array.insert(size -=1, " and ")
+    new_array = array.insert(size -=1, "and ")
     conversion = new_array.join(", ")
   end  
   conversion
